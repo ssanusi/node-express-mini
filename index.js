@@ -2,6 +2,7 @@ const express = require('express')
 const db = require('./data/db')
 const app = express()
 
+
 app.get('/api/users', (req, res) => {
   db.find()
         .then(users => {
